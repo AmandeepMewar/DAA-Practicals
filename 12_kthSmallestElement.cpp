@@ -53,7 +53,6 @@ int kthSmallest(int arr[], int low, int high, int k){
     else{
         return kthSmallest(arr,pos + 1, high, k-i);
     }
-
 }
 
 int main(){
@@ -71,10 +70,11 @@ int main(){
 
         int k;
 
-        cout << "Enter kth number : ";
+        cout << "Enter kth Number to be searched : ";
         cin >> k;
 
         cout << "k'th smallest element : " << kthSmallest(arr,0,n,k) << endl;
     }
-    
+
+    return 0;
 }

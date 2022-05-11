@@ -47,7 +47,6 @@ int merge(int A[], int low ,int mid, int high){
     }
 
     return inversions;
-
 }
 
 int mergeSort(int arr[], int low , int high){
@@ -92,5 +91,7 @@ int main(){
         cout << "Number of comparisons: " << comp << endl;
         display(arr,n);
     }
+
+    return 0;
     
 }

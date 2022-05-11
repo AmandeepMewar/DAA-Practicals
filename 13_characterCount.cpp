@@ -62,4 +62,6 @@ int main(){
         count(arr,n);
 
     }
+
+    return 0;
 }
