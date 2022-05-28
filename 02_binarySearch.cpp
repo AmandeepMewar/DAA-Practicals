@@ -31,7 +31,7 @@ void binarySearch(int arr[], int l, int h,int element, int comp){
 }
 
 void read(int arr[], int n){
-    cout << "Enter elements in the array : " ;
+    cout << "Enter elements in sorted order: " ;
     
     for (int i = 0; i< n; i++){
         cin >> arr[i];
@@ -40,6 +40,8 @@ void read(int arr[], int n){
 
 int main()
 {
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
+
     int t;
     cout << "Enter no. of Test cases : ";
     cin >> t;

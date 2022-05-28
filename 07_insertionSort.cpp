@@ -6,7 +6,7 @@
 using namespace std;
 
 void read(int arr[], int n){
-    cout << "Enter  elements : ";
+    cout << "Enter elements : ";
 
     for (int i = 0; i < n; i++)
     {
@@ -52,6 +52,7 @@ void display(int A[], int n){
 }
 
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter no. of Test cases : ";
     cin >> t;

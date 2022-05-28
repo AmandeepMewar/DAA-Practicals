@@ -19,6 +19,7 @@ bool findSum(int arr[], int low , int high, int element){
 
     while (low < high){
         if (arr[low] + arr[high] == element){
+            cout << arr[low] << " " << arr[high] << endl;
             return true;  
         }
 
@@ -33,6 +34,7 @@ bool findSum(int arr[], int low , int high, int element){
 }
 
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter number of test cases: ";
     cin >> t;
@@ -51,10 +53,7 @@ int main(){
         cout << "Enter a element: ";
         cin >> element;
 
-        if (findSum(arr,0,n-1, element)){
-            cout << "Pair found" << endl;
-        }
-        else{
+        if (!findSum(arr,0,n-1, element)){
             cout << "Pair not found" << endl;
         }
 

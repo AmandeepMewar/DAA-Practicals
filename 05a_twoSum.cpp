@@ -20,6 +20,7 @@ void display(int A[], int n){
     cout << endl;
 }
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter number of test cases: ";
     cin >> t;
@@ -35,17 +36,21 @@ int main(){
         read(arr, n);
 
         sort(arr, arr+n);
-        display(arr, n);
-        
+        int count = 0;
+
         for (int i = 0 ; i < n; i++){
             for (int j = 0; j < n; j++){
-                for (int k = j+1 ; k < n; j++){
+                for (int k = j+1 ; k < n; k++){
 
                     if (arr[j] + arr[k] == arr[i]){
-                        cout << j << " and " << k << endl;
+                        count++;
+                        cout << j << " "<< k << " "<< i << endl;
                     }
                 }
             }
+        }
+        if (count == 0){
+            cout << "No sequence found" << endl;
         }
     }
 }

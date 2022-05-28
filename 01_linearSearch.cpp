@@ -37,6 +37,8 @@ void linearSearch(int arr[], int n, int element){
 
 int main()
 {
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
+     
     int t;
     cout << "Enter no. of Test cases : ";
     cin >> t;

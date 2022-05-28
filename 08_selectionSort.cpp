@@ -6,7 +6,7 @@
 using namespace std;
 
 void read(int arr[], int n){
-    cout << "Enter  elements : " ;
+    cout << "Enter elements : " ;
     
     for (int i = 0; i< n; i++){
         cin >> arr[i];
@@ -32,17 +32,21 @@ int smallestIndex(int arr[], int i,int n){
     return a;
 }
 void selection_Sort(int arr[], int n){
-    
+    int comp = 0;
+    int swaps = 0;
     int index;
 
     for (int i = 0 ; i < n-1 ; i++){
 
         index = smallestIndex(arr, i, n);
-
+        comp++;
         if (i != index){
+            swaps++;
             swap(&arr[i], &arr[index]);
         }
     }
+    cout << "Comparisons: " << comp << endl;
+    cout << "Swaps: " << swaps << endl;
 }
 
 void display(int A[], int n){
@@ -54,6 +58,7 @@ void display(int A[], int n){
 }
 
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter number of test cases: " ;
     cin >> t;
@@ -66,8 +71,6 @@ int main(){
         int arr[n];
 
         read(arr,n);
-
-        display(arr,n);
 
         selection_Sort(arr,n);
 

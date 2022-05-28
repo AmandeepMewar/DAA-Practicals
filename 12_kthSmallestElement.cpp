@@ -56,6 +56,7 @@ int kthSmallest(int arr[], int low, int high, int k){
 }
 
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter number of test cases: ";
     cin >> t;

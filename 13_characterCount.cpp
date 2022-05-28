@@ -45,6 +45,7 @@ void display(char A[], int n){
 }
 
 int main(){
+    cout << "Name: Amandeep Singh" << endl << "Section: E" << endl << "Class Roll no. 09" << endl;
     int t;
     cout << "Enter number of test cases: ";
     cin >> t;
@@ -56,8 +57,6 @@ int main(){
         char arr[n];
 
         read(arr, n);
-
-        display(arr,n);
 
         count(arr,n);
 
